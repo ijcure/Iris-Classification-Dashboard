@@ -1,0 +1,4 @@
+1. Nos aseguramos de tener las librerias (necesarias) instaladas en los archivos ".py" (Puedes encontrarlas en "requeriments.txt")
+2. Vamos al archivo "iris_training.py" y luego de ejecutado y guardado el archivo "iris_model.pkl" vamos al siguiente paso
+3. En el archivo "proyect.py" -> TERMINAL -> python -m streamlit run proyect.py
+4. Nos debió abrir nuestra plataforma de trabajo en la web.

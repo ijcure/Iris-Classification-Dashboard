@@ -1,0 +1,10 @@
+python
+pandas
+numpys
+matplotlib
+seaborn
+sklearn (scikit-learn)
+joblit
+streamlit
+plotly (ploty.express)
+iris.csv
