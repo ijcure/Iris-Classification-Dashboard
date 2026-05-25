@@ -1,92 +1,148 @@
-# Iris Species Classification
+#  Iris Species Classification Dashboard
 
-This project uses Machine Learning to classify Iris species based on flower measurements using the Random Forest algorithm and an interactive Streamlit dashboard.
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?logo=streamlit&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-# Students
-- Cortés Cure Iván José
-- Mercado Rachath Esteban
+An interactive Machine Learning dashboard that classifies Iris flower species in real time using a **Random Forest** model and a **Streamlit** interface.
 
-# Course
-- 18038
-  
+>  Course: Data Mining — **18038** | Universidad de la Costa (CUC)
+
 ---
 
-# Objectives
+##  Students
+
+| Name | GitHub |
+|------|--------|
+| Cortés Cure Iván José | [@ijcure](https://github.com/ijcure) |
+| Mercado Rachath Esteban | [@EstebanDMR](https://github.com/EstebanDMR) |
+
+---
+
+##  Objectives
 
 - Understand and analyze the Iris dataset
-- Train a classification model
-- Evaluate model performance
-- Create an interactive dashboard
-- Visualize predictions and dataset behavior
+- Train a classification model using Random Forest
+- Evaluate model performance with standard metrics
+- Build an interactive dashboard for real-time prediction
+- Visualize dataset behavior and model insights
 
 ---
 
-# Dataset Information
+##  Project Structure
 
-The Iris dataset contains 150 flower samples from three species:
-
-- Iris Setosa
-- Iris Versicolor
-- Iris Virginica
-
-Features used:
-
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
+```
+📁 Iris-Classification-Dashboard/
+├── dashboard.py          # Streamlit dashboard (main app)
+├── iris_training.py      # Model training script
+├── iris_model.pkl        # Trained Random Forest model
+├── iris.csv              # Iris dataset
+├── requirements.txt      # Python dependencies
+└── important.txt         # Quick setup guide
+```
 
 ---
 
-# Machine Learning Model
+##  Dataset
 
-Algorithm used:
+The **Iris dataset** contains 150 samples across 3 species:
 
-- Random Forest Classifier
+| Species | Samples |
+|---------|---------|
+| Iris Setosa | 50 |
+| Iris Versicolor | 50 |
+| Iris Virginica | 50 |
 
-Metrics evaluated:
-
-- Accuracy
-- Precision
-- Recall
-- F1 Score
+**Features used for classification:**
+- Sepal Length (cm)
+- Sepal Width (cm)
+- Petal Length (cm)
+- Petal Width (cm)
 
 ---
 
-# Dashboard Features
+##  Machine Learning Model
+
+**Algorithm:** Random Forest Classifier
+
+**Metrics evaluated:**
+
+| Metric | Description |
+|--------|-------------|
+| Accuracy | Overall correct predictions |
+| Precision | Correctness of positive predictions |
+| Recall | Coverage of actual positives |
+| F1 Score | Harmonic mean of precision and recall |
+
+---
+
+##  Dashboard Features
 
 The Streamlit dashboard includes:
 
-- Interactive sliders for flower measurements
-- Real-time species prediction
-- Model performance metrics
-- Histograms
-- Scatter Matrix
-- Correlation Heatmap
-- 3D Scatter Plot
-- Feature Importance
-- Confusion Matrix
+-  Interactive sliders for flower measurements
+-  Real-time species prediction
+-  Model performance metrics
+-  Histograms & Scatter Matrix
+-  Correlation Heatmap
+-  3D Scatter Plot
+-  Feature Importance chart
+-  Confusion Matrix
 
 ---
 
-# Technologies Used
+##  Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn (sklearn)
-- Streamlit
-- Plotly
-- Matplotlib
-- Seaborn
+| Category | Tools |
+|----------|-------|
+| Language | Python 3.10+ |
+| ML | Scikit-learn |
+| Dashboard | Streamlit |
+| Visualization | Plotly, Matplotlib, Seaborn |
+| Data | Pandas, NumPy |
 
 ---
 
-# How to run the project.
+##  How to Run
 
-- You just can read the important.txt file or follow the next steps
-  
-1. Make sure you have the necessary libraries installed for the “.py” files (you can find them in “requirements.txt”)
-2. Go to the “iris_training.py” file. After running it and saving the “iris_model.pkl” file, proceed to the next step.
-3. In the “dashboard.py” file -> TERMINAL -> python -m streamlit run dashboard.py
-4. Your web-based workspace should now be open.
+### 1. Clone the repository
+```bash
+git clone https://github.com/ijcure/Iris-Classification-Dashboard.git
+cd Iris-Classification-Dashboard
+```
+
+### 2. Create and activate a virtual environment *(recommended)*
+```bash
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Train the model
+```bash
+python iris_training.py
+```
+This will generate the `iris_model.pkl` file.
+
+### 5. Launch the dashboard
+```bash
+python -m streamlit run dashboard.py
+```
+
+Your browser will open the dashboard automatically at `http://localhost:8501`.
+
+---
+
+## License
+
+This project was developed for academic purposes at **Universidad de la Costa (CUC)**.
